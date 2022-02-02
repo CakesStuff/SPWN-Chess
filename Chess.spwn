@@ -41,7 +41,8 @@ $.add(obj{
   Y:15,
   GROUPS:[follow,selectorg],
   BLOCK_A:selectorh,
-  DYNAMIC_BLOCK:true
+  DYNAMIC_BLOCK:true,
+  SCALING:0.9
 })
 on(gs.button_a(),!{
   selector++
