@@ -1,5 +1,12 @@
 make visual tiles
 make selector working
 create piece template
+  counter x
+  counter y
+  collision piece
+  collision possible moves
+  draw
 add the pieces
-add the ai
+  counter for king<->tower swap
+  add 8 queens for the end
+add the ai maybe
