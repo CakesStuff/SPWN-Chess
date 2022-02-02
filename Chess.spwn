@@ -3,8 +3,8 @@ gs=import gamescene
 follow=?g
 follow.lock_to_player(lock_x=true,lock_y=false)
 colors=[?c,?c]
-colors[0].set(rgb(255,255,255))
-colors[1].set(0,0,0)
+colors[0].set(rgb(1,1,1))
+colors[1].set(rgb(0,0,0))
 for i in 0..8 {
   for n in 0..8 {
     $.add(obj{
