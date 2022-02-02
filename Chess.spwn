@@ -17,7 +17,15 @@ for i in 0..8 {
   }
 }
 //add selector object
-//add selector collision block
+selectorh=?b
+$.add(obj{
+  OBJ_ID:1816,
+  X:15,
+  Y:15,
+  GROUPS:[follow,selectorg],
+  BLOCK_A:selectorh,
+  DYNAMIC_BLOCK:true
+})
 selector=counter(0)
 selectorg=?g
 selectorx=counter(0)
