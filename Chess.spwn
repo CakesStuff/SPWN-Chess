@@ -43,40 +43,40 @@ $.add(obj{
   BLOCK_A:selectorh,
   DYNAMIC_BLOCK:true
 })
-gs.button_a().on_triggered(!{
+on(gs.button_a(),!{
   selector++
   selectorag.rotate(selectormg,90)
 })
 on(selector.reaches(4),!{
   selector-=4
 })
-gs.button_b().on_triggered(!{
+on(gs.button_b(),!{
   match selector{
     ==0:
       !{
-        if x > 0{
-          x--
+        if selectorx > 0{
+          selectorx--
           selectorg.move(-10,0)
         }
       },
     ==1:
       !{
-        if y < 7{
-          y++
+        if selectory < 7{
+          selectory++
           selectorg.move(0,10)
         }
       },
     ==2:
       !{
-        if x < 7{
-          x++
+        if selectorx < 7{
+          selectorx++
           selectorg.move(10,0)
         }
       },
     ==3:
       !{
-        if y > 0{
-          y--
+        if selectory > 0{
+          selectory--
           selectorg.move(0,-10)
         }
       },
