@@ -16,3 +16,47 @@ for i in 0..8 {
     })
   }
 }
+//add selector object
+//add selector collision block
+selector=counter(0)
+selectorg=?g
+selectorx=counter(0)
+selectory=counter(0)
+gs.button_a().on_triggered(!{
+  selector++
+})
+on(selector.reaches(4),!{
+  selector-=4
+})
+gs.button_b().on_triggered(!{
+  match selector{
+    ==0:
+      !{
+        if x > 0{
+          x--
+          selectorg.move(-10,0)
+        }
+      },
+    ==1:
+      !{
+        if y < 7{
+          y++
+          selectorg.move(0,10)
+        }
+      },
+    ==2:
+      !{
+        if x < 7{
+          x++
+          selectorg.move(10,0)
+        }
+      },
+    ==3:
+      !{
+        if y > 0{
+          y--
+          selectorg.move(0,-10)
+        }
+      },
+  }
+})
