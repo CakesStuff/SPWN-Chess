@@ -16,7 +16,24 @@ for i in 0..8 {
     })
   }
 }
-//add selector object
+selector=counter(2)
+selectorg=?g
+selectorx=counter(0)
+selectory=counter(0)
+selectormg=?g
+selectorag=?g
+$.add(obj{
+  OBJ_ID:494,
+  X:45,
+  Y:15,
+  GROUPS:[follow,selectorg,selectorag],
+})
+$.add(obj{
+  OBJ_ID:467,
+  X:15,
+  Y:15,
+  GROUPS:[follow,selectorg,selectormg],
+})
 selectorh=?b
 $.add(obj{
   OBJ_ID:1816,
@@ -26,12 +43,9 @@ $.add(obj{
   BLOCK_A:selectorh,
   DYNAMIC_BLOCK:true
 })
-selector=counter(0)
-selectorg=?g
-selectorx=counter(0)
-selectory=counter(0)
 gs.button_a().on_triggered(!{
   selector++
+  selectorag.rotate(selectormg,90)
 })
 on(selector.reaches(4),!{
   selector-=4
