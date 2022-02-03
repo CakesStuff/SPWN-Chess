@@ -55,7 +55,7 @@ on(selector.reaches(4),!{
 on(gs.button_b(),!{
   selectort++
   wait(1)
-  if(selectort==2){
+  if(selectort!==2){
     match selector{
       ==0:
         !{
@@ -86,6 +86,8 @@ on(gs.button_b(),!{
           }
         },
     }
+  } else {
+    move!
   }
   selectort.reset()
 })
